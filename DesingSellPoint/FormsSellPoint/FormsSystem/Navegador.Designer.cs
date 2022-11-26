@@ -94,6 +94,7 @@
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(23, 22);
             this.btnGo.Text = "toolStripButton1";
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // btnCerrar
             // 
