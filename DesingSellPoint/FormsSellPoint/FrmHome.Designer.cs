@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.navegador = new System.Windows.Forms.Button();
             this.PnlSystem = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -56,6 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.panel1.Controls.Add(this.navegador);
             this.panel1.Controls.Add(this.PnlSystem);
             this.panel1.Controls.Add(this.btnSystem);
             this.panel1.Controls.Add(this.PnlArchive);
@@ -67,6 +69,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(218, 544);
             this.panel1.TabIndex = 1;
+            // 
+            // navegador
+            // 
+            this.navegador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.navegador.Dock = System.Windows.Forms.DockStyle.Top;
+            this.navegador.FlatAppearance.BorderSize = 0;
+            this.navegador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navegador.ForeColor = System.Drawing.Color.Snow;
+            this.navegador.Image = ((System.Drawing.Image)(resources.GetObject("navegador.Image")));
+            this.navegador.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navegador.Location = new System.Drawing.Point(0, 471);
+            this.navegador.Name = "navegador";
+            this.navegador.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.navegador.Size = new System.Drawing.Size(218, 37);
+            this.navegador.TabIndex = 5;
+            this.navegador.Text = "           Navegador";
+            this.navegador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navegador.UseVisualStyleBackColor = false;
+            this.navegador.Click += new System.EventHandler(this.navegador_Click);
             // 
             // PnlSystem
             // 
@@ -326,5 +347,6 @@
         private Button btnSystem;
         private Button btnArchive;
         private ToolStripStatusLabel stsLabelUser;
+        private Button navegador;
     }
 }

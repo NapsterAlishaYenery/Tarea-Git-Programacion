@@ -59,5 +59,15 @@ namespace DesingSellPoint.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_computer_icons_graphics_favicon_web_browser_symbol_miscellaneous_cdr {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-computer-icons-graphics-favicon-web-browser-symbol-miscellaneous-cdr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

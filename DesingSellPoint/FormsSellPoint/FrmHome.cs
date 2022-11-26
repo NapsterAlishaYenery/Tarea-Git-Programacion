@@ -170,5 +170,12 @@ namespace DesingSellPoint.FormsSellPoint
             stsLabelTime.Text = DateTime.Now.ToLongTimeString();
             stsLabelUser.Text = Program.NickUser.ToString();
         }
+
+        private void navegador_Click(object sender, EventArgs e)
+        {
+            openChildForms(new Navegador());
+
+            hideSubsMenus();
+        }
     }
 }
